@@ -33,4 +33,21 @@ Basic knowledge of SQL and DAX.
 
 ---
 
+**Step 1: Understanding the Test Environment Data & Requirements.**
+
+Begin by analyzing the sales data and project requirements in a test environment. This ensures the data is suitable for reporting without affecting production systems.
+
+**Key Activities:**
+
+Review the dataset structure: Identify tables such as test, Products.
+
+Common columns might include order_date, product_id, availability, demand, product_id, product_name, unit_price($).
+
+Understand requirements: Define what insights are needed, 
+
+Tips:
+
+Use tools like MySQL Workbench to explore the data.
+
+Document assumptions, such as data types (e.g., datetime for dates, decimal for revenue) and any missing values.
 
