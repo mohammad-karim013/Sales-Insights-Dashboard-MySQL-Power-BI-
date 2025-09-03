@@ -1,0 +1,37 @@
+create database test_env;
+
+use test_env;
+select * from products;
+select * from test;
+
+select distinct order_date from test;
+select distinct product_id from test;
+select distinct availability from test;
+select distinct demand from test;
+
+
+-------------------------------------------------
+select a.order_date, a.product_id, a.availability, a.demand, b.product_name, b.`Unit_price ($)` 
+from test as a 
+left join products as b 
+on a.product_id = b.product_id;
+---------------------------------------------------------
+CREATE TABLE NEW_TABLE AS
+SELECT DISTINCT
+    a.order_date,
+    a.product_id,
+    a.availability,
+    a.demand,
+    b.product_name,
+    b.`Unit_price ($)` 
+FROM test AS a
+LEFT JOIN products AS b
+  ON a.product_id = b.product_id;
+ -----------------------------------
+
+
+select * from new_table;
+ 
+
+
+
