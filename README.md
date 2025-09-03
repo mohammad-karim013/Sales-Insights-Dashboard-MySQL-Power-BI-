@@ -9,8 +9,11 @@
 ---
 
 MYSQL installed and running.
+
 Power BI Desktop installed.
+
 Sample sales data (e.g., CSV files or database dumps) for testing.
+
 Basic knowledge of SQL and DAX.
 
 ---
