@@ -81,7 +81,34 @@ If using MySQL instead, replace with LOAD DATA INFILE commands.
 
 ---
 
+**Step 3: Applying Left Join in MYSQL to Prepare the Data for Reporting.**
 
+Refine the data by joining tables to create a comprehensive dataset for reporting. A LEFT JOIN ensures all records from the primary table (e.g., Sales) are included, even if matching data is missing in joined tables.
+
+**Key Activities:**
+
+Identify joins needed: For example, join test with Products for enriched data.
+
+Write the SQL query:
+
+<img width="992" height="120" alt="image" src="https://github.com/user-attachments/assets/264e8852-b8f1-4c6d-9f70-93bd32d7c8d0" />
+
+Create a view or materialized table: Save the joined result for easy access in Power BI.
+
+<img width="482" height="352" alt="image" src="https://github.com/user-attachments/assets/f8bbf205-f44b-46cb-b498-5a3efaac9f98" />
+
+Test the query: Ensure no data loss and validate with sample outputs.
+
+
+**Tips:**
+
+Use LEFT JOIN to preserve all test records; switch to INNER JOIN if complete matches are required.
+
+Optimize for performance if dealing with large datasets (e.g., add indexes on join columns).
+
+---
+
+**Step 4: Importing the Data to Power BI Desktop from Test Environment.**
 
 
 
