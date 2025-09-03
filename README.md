@@ -51,3 +51,37 @@ Use tools like MySQL Workbench to explore the data.
 
 Document assumptions, such as data types (e.g., datetime for dates, decimal for revenue) and any missing values.
 
+---
+
+**Step 2: Importing the Data in Test Environment in MYSQL.**
+
+Import the raw test data into the MYSQL workbench test environment. If your data originates from MySQL, you can export it as SQL dumps or CSV and import accordingly.
+
+Key Activities:
+
+Create a new database: Use CREATE DATABASE test_env;.
+
+Create tables: Define schemas matching your data, e.g.:
+
+-- Create table
+CREATE TABLE test (
+    order_date DATE,
+    product_id INT,
+    availability INT,
+    demand INT
+);
+
+Tips:
+
+Handle errors like data type mismatches or duplicates.
+
+If using MySQL instead, replace with LOAD DATA INFILE commands.
+
+<img width="405" height="247" alt="image" src="https://github.com/user-attachments/assets/aeaa2e95-e384-4ef6-bbc9-65fcd74fcebe" />
+
+---
+
+
+
+
+
